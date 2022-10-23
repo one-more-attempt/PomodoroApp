@@ -1,0 +1,25 @@
+.create {
+    &__content {
+        padding: 20px 0 20px 0;
+
+        &__form {
+            @include border(1px, solid, black, 5px);
+            @include size (80%, inherit, 50px);
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+
+            &__text-area {
+                min-height: 100px !important;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+}
+
+.tasks-list {
+    width: 100%;
+    margin: 0 auto;
+}

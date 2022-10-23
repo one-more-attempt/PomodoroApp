@@ -1,0 +1,17 @@
+@mixin flex($direction: row, $align_items: center, $justify_content: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align_items;
+    justify-content: $justify_content;
+}
+
+@mixin size($width: 100%, $height: inherit, $min_height: inherit) {
+    width: $width !important;
+    height: $height;
+    min-height: $min_height;
+}
+
+@mixin border($height, $type, $color, $radius: 0) {
+    border: $height $type $color;
+    border-radius: $radius;
+}

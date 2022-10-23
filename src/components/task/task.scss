@@ -1,0 +1,42 @@
+.task {
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    min-height: 50px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+
+    i {
+        font-size: 25px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+
+        &:hover {
+            filter: contrast(50%)
+        }
+
+        &:active {
+            filter: contrast(100%)
+        }
+
+    }
+
+    .edit-icon {}
+
+    .delete-icon {
+        right: 60px;
+    }
+
+    .pomo-icon {
+        display: inline;
+
+        img {
+            height: 40px;
+        }
+    }
+
+    h4, p {margin: 5px 0 0 10px;}
+}

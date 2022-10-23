@@ -1,0 +1,74 @@
+.header {
+    background-color: rgb(214, 240, 250);
+    height: 50px;
+    border-bottom: 1px solid rgb(129, 129, 129);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    &__nav {
+        display: inline-flex;
+        align-items: center;
+
+        .logo-container {
+            img {
+                height: 47px;
+                background-color: rgb(214, 240, 250);
+            }
+
+            &:hover {
+                filter: brightness(90%)
+            }
+
+            &:active {
+                filter: brightness(75%)
+            }
+        }
+
+        i {
+            font-size: 25px;
+        }
+
+        .progress-button,
+        .settings-button {
+            border: none;
+            height: 47px;
+            width: 47px;
+            background-color: rgb(214, 240, 250);
+            ;
+
+            &:hover {
+                filter: brightness(90%)
+            }
+
+            &:active {
+                filter: brightness(75%)
+            }
+        }
+
+    }
+}
+
+.btn {
+    &:hover {
+        filter: brightness(90%)
+    }
+
+    &:active {
+        filter: brightness(75%)
+    }
+}
+
+.dropdown-menu {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}

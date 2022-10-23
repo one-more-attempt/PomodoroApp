@@ -1,0 +1,46 @@
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: center;
+    padding: 50px;    
+    border-radius: 10px;
+
+    .output {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .progress {
+        height: 70px;
+        font-size: 20px;
+
+        .progress-bar {
+            width: 0%;
+            background-color: rgb(38, 184, 241);
+
+        }
+    }
+
+    .settings {
+        margin: 20px 0;
+        border: 2px solid skyblue;
+        height: 330px;
+
+    }
+
+    i {
+        font-size: 100px;
+        margin: 10px;
+        color: rgb(96, 192, 230);
+
+        &:hover {
+            filter: brightness(90%)
+        }
+
+        &:active {
+            filter: brightness(80%)
+        }
+    }
+}

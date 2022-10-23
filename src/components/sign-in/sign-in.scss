@@ -1,0 +1,34 @@
+.sign-in {
+    width: 75%;
+    margin: 150px auto;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    button,
+    a,
+    p {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    p {
+        margin-top: 5px
+    }
+
+    a{
+margin-top: 10px
+    }
+}
