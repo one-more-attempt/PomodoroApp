@@ -4,7 +4,11 @@ import {
   getUser,
   signInRequest,
 } from "../../firebase-api/firebase-handlers";
-import { setToken, setUser } from "../../shared/local-storage-service";
+import {
+  setToken,
+  setUser,
+  setUserIdInLC,
+} from "../../shared/local-storage-service";
 import { ROUTES } from "../../shared/routes";
 
 export const signUpHandler = () => {
@@ -75,6 +79,7 @@ export const signUpHandler = () => {
       console.log(responce);
       console.log("SUCCESS");
     });
+
     //кладем поле из auth в коллекцию users
     await createUserDataRequest({ ...userData, authId: authId }).then(
       (response) => {
@@ -94,7 +99,13 @@ export const signUpHandler = () => {
         console.log("INVALID CREDS");
       });
     await getUser(userId).then((response) => {
+      console.log(response);
+      console.log(userId);
       setUser(response);
+      const userIdObj = {
+        userId: userId,
+      };
+      setUserIdInLC(userIdObj);
       window.location.href = ROUTES.main_page;
     });
   };

@@ -134,7 +134,7 @@ export const mainPageHandler = async () => {
         )}%`;
         count--;
       }
-    }, 100);
+    }, 1000);
   };
 
   runButton.onclick = async () => {

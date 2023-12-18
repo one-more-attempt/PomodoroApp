@@ -113,6 +113,7 @@ export const renderHeader = async () => {
       tasks = Object.keys(tasksList).map((key) => {
         const task = { id: key, ...tasksList[key] };
         if (task.userId === userIDFromLocal) {
+          console.log('has tasks');
           dropdownContainer.append(
             new Task(task, titleClickHandler).getTaskTitle()
           );
@@ -123,6 +124,7 @@ export const renderHeader = async () => {
   };
 
   await getAllTasks().then((tasksList) => {
+    console.log(tasksList);
     renderAllTasksTitles(tasksList);
   });
 
